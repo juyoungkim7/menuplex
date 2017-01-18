@@ -1,3 +1,6 @@
+{{school.school_name}}<br>
+<ul>
 {% for meal in school.meal_set.all %}
-  {{ meal.meal_name}} {{meal.price}}<br>
+  <li>{{ meal.meal_name}} {{meal.price}}</li>
 {% endfor %}
+</ul>
