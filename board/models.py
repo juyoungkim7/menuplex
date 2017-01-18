@@ -11,6 +11,7 @@ class Meal(models.Model):
     school = models.ForeignKey(School)
     meal_name = models.CharField(max_length=200)
     price = models.IntegerField()
+    # test
 
 
     def __str__(self):
