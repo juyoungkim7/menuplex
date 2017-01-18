@@ -13,6 +13,8 @@ class Meal(models.Model):
     price = models.IntegerField()
     # test
 
-
     def __str__(self):
         return self.meal_name
+
+class Restaurant(models.Model):
+    restaurant_name
