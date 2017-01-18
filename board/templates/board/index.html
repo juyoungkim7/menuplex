@@ -1,0 +1,12 @@
+<!-- hi,there! -->
+
+{% if school_list %}
+  <ul>
+  {% for school in school_list %}
+    <li><a href = "/board/{{ school.id }}/">{{school.school_name}}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  not exist
+
+{% endif %}
